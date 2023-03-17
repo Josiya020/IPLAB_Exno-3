@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Disney Online</title>
+  </head>
+  <style>
+    body {
+
+background-image: url('blur.jpg');
+background-attachment: fixed; 
+background-size: 100% 100%;
+}
+.form-box {
+  border: 2px solid #975ae6;
+  border-radius: 5px;
+  padding: 10px;
+  float: left;
+  width: 30%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+.form-box h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+  </style>
+  
+  <body style="padding: 80px;">
+    
+   
+    
+    <div class="form-box">
+        <h2 style="color: #975ae6;">Buy Tickets Online</h2>
+        <form action="process-payment.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="ticket-type">Ticket type:</label>
+            <select id="ticket-type" name="ticket-type" required>
+              <option value="single-day">Single day ticket</option>
+              <option value="multi-day">Multi-day ticket</option>
+              <option value="annual-pass">Annual pass</option>
+            </select>
+            <br><br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+            <br><br>
+            <label for="payment-method">Payment method:</label>
+            <select id="payment-method" name="payment-method" required>
+              <option value="credit-card">Credit card</option>
+              <option value="paypal">PayPal</option>
+            </select>
+            <br><br>
+            <button type="submit">Buy tickets</button>
+          </form>
+       
+     
+   
+    <footer>
+      <p style="color: #975ae6;">&copy; Disney Online. All rights reserved.</p>
+    </footer>
+</div>  
+  </body>
+</html>
